@@ -11,31 +11,43 @@
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
+
+	<nav  class="navbar navbar-default nav_style" role="navigation">
+	  	<div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand nav_logo_color" href="#">Snail Project</a>
+	    </div>
+	</nav>
 	
-	
-	
-	<div class="container-fluid">
-		<p><h1>Snail project</h1></p>
-	</div>
 
 	<div class="container-fluid">
-		<div class="container-fluid margin_top_15">
+		<div class="container-fluid margin_top_15pc">
 			<input id="address" type="text" class="form-control width_60 height_45" placeholder="Podaj URL">
 			<button id="runTest" class="btn btn-success btn-lg">Test</button>
 		</div>
-		<?php include 'ip.php'; ?>
+		<div class="margin_top_15">
+			<p>Twoje IP to - <?php include 'ip.php'; ?>
+		</div>
+		
 	</div>
 	
 	
-	<div class="container">
-		<table id="insightResultTable" class="table table-striped table-bordered table-hover">
-			<thead>
+	<div class="container margin_top_20pc">
+		<table id="insightResultTable" class="table table-striped table-bordered table-hover white_box">
+<!--			<thead>
 				<tr>
 					<td>1</td>
 					<td>2</td>
 					<td>3</td>
-				</tr>
-			</thead>
+				</tr> 
+			</thead> -->
 			<tbody>
 			</tbody>
 		</table>

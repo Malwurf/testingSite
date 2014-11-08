@@ -1,0 +1,46 @@
+.width_60 {
+    width: 60%;
+    float: left;
+}
+
+.width_5 {
+    width: 5%;
+    float: right;
+}
+
+.height_45 {
+    height: 45px;
+}
+
+.margin_top_15 {
+    margin-top: 15px;
+}
+
+.margin_top_15pc {
+    margin-top: 15%;
+}
+
+.margin_top_20pc {
+	margin-top: 20%;
+}
+
+body {
+	background-image: url(../img/snail.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.nav_style {
+	background-color: #454444;
+	border: none;
+	border-radius: 0;
+}
+
+.nav_logo_color {
+	color: white;
+}
+
+.white_box {
+	background-color: white;
+	opacity: 0.8;
+}
