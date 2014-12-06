@@ -8,7 +8,7 @@ var CHART_API_URL = 'http://chart.apis.google.com/chart?';
 
 // Object that will hold the callbacks that process results from the
 // PageSpeed Insights API.
-var callbacks = {}
+var callbacks = {};
 
 // Invokes the PageSpeed Insights API. The response will contain
 // JavaScript that invokes our callback with the PageSpeed results.
@@ -42,6 +42,7 @@ function runPagespeedCallbacks(result) {
   }
 
 	console.log(result);
+  print_score(result.score);
 
   // Dispatch to each function on the callbacks object.
   for (var fn in callbacks) {
@@ -75,5 +76,27 @@ callbacks.fillTheTable = function(result) {
 		trstring += "</td></tr>";
 		$("#insightResultTable tbody").append(trstring);
 	});
+    $("#insightResultTable").show();
+    $('.site_ip').show();
 };
 
+function print_score(wynik){
+    $('#score_result').html("<p class='white_box status'>Testowana strona jest zoptymalizowana w " + wynik + "%");
+};
+
+
+/*
+function print_score(wynik){
+  if(wynik <= 20){
+    $('#score_result').html("0-20");
+  } else if ((wynik > 20) && (wynik <= 40)) {
+    $('#score_result').html("20 - 40");
+  } else if ((wynik > 40) && (wynik <= 60)) {
+    $('#score_result').html("40 - 60");
+  } else if ((wynik > 60) && (wynik <= 80)) {
+    $('#score_result').html("60 - 80");
+  } else if ((wynik > 80) && (wynik <= 100)) {
+    $('#score_result').html("80 - 100");
+  }    
+};
+*/

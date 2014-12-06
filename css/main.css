@@ -1,3 +1,8 @@
+body {
+    color: black;
+}
+
+
 .width_60 {
     width: 60%;
     float: left;
@@ -16,6 +21,13 @@
     margin-top: 15px;
 }
 
+.margin_right_5pc {
+	margin-right: 5%;
+}
+
+.margin_top_10pc {
+    margin-top: 10%;
+}
 .margin_top_15pc {
     margin-top: 15%;
 }
@@ -30,6 +42,18 @@ body {
 	background-repeat: no-repeat;
 }
 
+#logo {
+	float: left;
+}
+
+#logo a {
+	color: #FFC;
+}
+
+#ip p {
+	color: #FFC;
+}
+
 .nav_style {
 	background-color: #454444;
 	border: none;
@@ -42,5 +66,41 @@ body {
 
 .white_box {
 	background-color: white;
-	opacity: 0.8;
+	opacity: 0.85;
+}
+
+.text_white {
+	color: white;
+}
+
+.float_right {
+	float: right;
+}
+
+.float_left {
+	float: left;
+}
+
+#insightResultTable {
+	display: none;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.site_ip {
+    width: 350px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+    display: none;
+}
+
+.status {
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 1px;
+    font-size: 30px;
 }
