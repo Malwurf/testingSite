@@ -9,6 +9,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>   -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+	<link rel='stylesheet' href='css/jquery-ui.css'/>
+	<link rel='stylesheet' href='css/har-viewer.css'/>
 </head>
 <body>
 
@@ -35,8 +37,9 @@
 -->
 		
 	</div>
-	
+<!--	
 	<p class="white_box site_ip">Adres IP testowanej strony to - <span id="insert_ip"></span></p>
+-->
 	<p id="score_result"></p>
 	<div class="container margin_top_10pc">
 		<table id="insightResultTable" class="table table-striped table-bordered table-hover white_box">
@@ -51,12 +54,20 @@
 			<tbody>
 			</tbody>
 		</table>
+		<div id='har-view' class="white_box">
+
+		</div><!-- /har-view -->
 	</div>
 
 
 	<script src="js/jquery-2.1.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/modernizr.js"> </script>
+	<script type='text/javascript' src='js/mustache.js'></script>
+	<script type='text/javascript' src='js/jquery.min.js'></script>
+	<script type='text/javascript' src='js/jquery-ui.min.js'></script>
+	<script type='text/javascript' src='js/har-viewer.js'></script>
+	<script src="js/har.js"> </script>
 	<script>
 		function check_ip(adres_strony) {
 			$.ajax({
@@ -76,13 +87,15 @@
 		$("#runTest").click(function(e) {
 			
 			URL_TO_GET_RESULTS_FOR = $("#address").val();
-			check_ip(URL_TO_GET_RESULTS_FOR);
+			//check_ip(URL_TO_GET_RESULTS_FOR);
 			URL_TO_GET_RESULTS_FOR = "http://" + URL_TO_GET_RESULTS_FOR;
 			$("#insightResultTable tbody").html('');
 			setTimeout(runPagespeed, 0);
+
+			loadHar(URL_TO_GET_RESULTS_FOR);
 		});
 	</script>
-	<script src="js/scripts/insight.js"></script>
+	<script src="js/insight.js"></script>
 	<script>
 		if 	(Modernizr.applicationcache) {
 			document.write("ApplicationCache Jest wspierane !");
