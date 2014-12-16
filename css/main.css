@@ -103,4 +103,24 @@ body {
     text-align: center;
     margin-top: 1px;
     font-size: 30px;
+    margin-top: 150px;
+}
+
+#modernizr {
+    margin-top: 20px;
+    background: white;
+    opacity: 0.85;
+    display: none;
+    font-size: 16px;
+}
+#modernizr h3 {
+    text-align: center;
+    padding-top: 13px;
+    margin-bottom: 15px;
+}
+
+#modernizr_list li {
+    list-style: none;
+    margin-bottom: 3px;
+    margin-top: 1px;
 }

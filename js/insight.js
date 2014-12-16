@@ -77,9 +77,8 @@ callbacks.fillTheTable = function(result) {
 		$("#insightResultTable tbody").append(trstring);
 	});
     $("#insightResultTable").show();
+    $('#modernizr').show();
     //$('.site_ip').show();
-    
-
 };
 
     function print_score(wynik){

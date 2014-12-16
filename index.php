@@ -41,7 +41,7 @@
 	<p class="white_box site_ip">Adres IP testowanej strony to - <span id="insert_ip"></span></p>
 -->
 	<p id="score_result"></p>
-	<div class="container margin_top_10pc">
+	<div class="container margin_top_15px">
 		<table id="insightResultTable" class="table table-striped table-bordered table-hover white_box">
 			<thead>
 				<tr>
@@ -57,6 +57,14 @@
 		<div id='har-view' class="white_box">
 
 		</div><!-- /har-view -->
+        
+        <div id="modernizr">
+            <ul id="modernizr_list">
+            
+            </ul>
+        
+        </div>
+        
 	</div>
 
 
@@ -96,13 +104,7 @@
 		});
 	</script>
 	<script src="js/insight.js"></script>
-	<script>
-		if 	(Modernizr.applicationcache) {
-			document.write("ApplicationCache Jest wspierane !");
-		}else{
-			document.write("ApplicationCache Nie jest!");
-		}
-	</script>
+	<script src="js/modernizr_test.js"></script>
 
 </body>
 </html>
