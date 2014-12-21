@@ -1,0 +1,29 @@
+
+
+<!DOCTYPE html>
+<html>
+<head lang="pl">
+    <meta charset="UTF-8">
+    <title>Snail project</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+<div>
+    <ul id="w3c">
+    </ul>
+</div>
+    
+    <script>        
+        $.getJSON('w3ctest.php?url=http://www.google.pl', function(result){
+            $.each(result, function(i, field){
+				
+				var li = $('<li class="'+field.type+'">').text(field.message);
+				
+				$("ul#w3c").append(li);
+				
+				console.log(field.message);
+            });
+          });
+    </script>
+</body>
+</html>

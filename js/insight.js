@@ -81,6 +81,8 @@ callbacks.fillTheTable = function(result) {
     //$('.site_ip').show();
 };
 
+
+/*
     function print_score(wynik){
       if(wynik <= 20){
         $('#score_result').html("<p class='white_box status'> Rate E");
@@ -96,12 +98,13 @@ callbacks.fillTheTable = function(result) {
           $('score_result').html("<p class='white_box status'> Rate A+");
       }
     };
-
-/*
-function print_score(wynik){
-    $('#score_result').html("<p class='white_box status'>111Testowana strona jest zoptymalizowana w " + wynik + "%");
-};
+    
 */
+
+function print_score(wynik){
+    $('#score_result').html("<p class='white_box status'>This site is optimized in " + wynik + "%");
+};
+
 
 
 
