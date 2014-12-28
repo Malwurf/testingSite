@@ -62,7 +62,11 @@
             <ul id="modernizr_list">
             
             </ul>
+        </div>
         
+        <div id="w3cvalidator" class="white_box">
+            <ul id="w3c">
+            </ul>
         </div>
         
 	</div>
@@ -101,10 +105,12 @@
 			setTimeout(runPagespeed, 0);
 
 			loadHar(URL_TO_GET_RESULTS_FOR);
+            w3ctest(URL_TO_GET_RESULTS_FOR);
 		});
 	</script>
 	<script src="js/insight.js"></script>
 	<script src="js/modernizr_test.js"></script>
+    <script src="js/w3ctest.js"></script>
 
 </body>
 </html>
