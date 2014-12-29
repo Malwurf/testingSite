@@ -1,5 +1,9 @@
+html {
+    
+}
+
 body {
-    color: black;
+    
 }
 
 
@@ -40,6 +44,9 @@ body {
 	background-image: url(../img/snail.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
+    height: 990px;
+    color: black;
+    
 }
 
 #logo {
@@ -83,6 +90,7 @@ body {
 
 #insightResultTable {
 	display: none;
+    margin-top: 550px;
 }
 
 .center {
@@ -112,7 +120,9 @@ body {
     opacity: 0.85;
     display: none;
     font-size: 16px;
+/*    text-align: center;*/
 }
+
 #modernizr h3 {
     text-align: center;
     padding-top: 13px;
@@ -125,6 +135,67 @@ body {
     margin-top: 1px;
 }
 
-#w3cvalidator {
+.modernizr_item {
     
 }
+
+.modernizr_item_not_supported {
+    background-color: tomato;
+}
+
+#har-view {
+    margin-top: 40px;
+}
+
+
+#w3cvalidator {
+    margin-top: 40px;
+}
+
+#w3c li {
+    list-style: none;
+}
+
+.ilosc_wiadomosci {
+    background-color: tomato;
+    font-size: 18px;
+    justify-content: center;
+}
+
+.linia {
+    
+}
+
+.kolumna {
+    
+}
+
+.wiadomosc {
+    display: block;
+    font-weight: bold;
+    
+}
+
+.flex {
+    display: flex;
+    margin-top: 23%;
+}
+
+.empty {
+    flex: 1;
+}
+
+.input {
+    flex: 2;
+    height: 45px;
+}
+
+.button{
+    flex: 0.125
+}
+
+
+footer {
+    margin-top: 100px;
+}
+

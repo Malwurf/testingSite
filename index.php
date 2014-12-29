@@ -26,11 +26,11 @@
 	</nav>
 	
 
-	<div class="container-fluid">
-		<div class="container-fluid margin_top_15pc">
-			<input id="address" type="text" class="form-control width_60 height_45" placeholder="np. www.pwr.edu.pl">
-			<button id="runTest" class="btn btn-success btn-lg">Test</button>
-		</div>
+	<div class="flex">
+        <div class="empty"></div>
+            <input id="address" type="text" class="form-control input" placeholder="np. www.pwr.edu.pl">
+            <button id="runTest" class="btn btn-success btn-lg button">Test</button>
+        <div class="empty"></div>
 <!--		<div class="margin_top_15">
 			<p class="">Twoje IP to - <?php include 'ip.php'; ?>
 		</div>
@@ -111,6 +111,8 @@
 	<script src="js/insight.js"></script>
 	<script src="js/modernizr_test.js"></script>
     <script src="js/w3ctest.js"></script>
+    
+    <footer></footer>
 
 </body>
 </html>
