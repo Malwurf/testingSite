@@ -41,12 +41,31 @@ body {
 }
 
 body {
-	background-image: url(../img/snail.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-    height: 990px;
-    color: black;
+/*
+    background: #6cab26;
+    background-image: url("../img/snail.jpg");
+    background-image: url("../img/snail.jpg"), -webkit-gradient(linear, left top, left bottom, from(#6cab26), to(#6ceb86));
+    background-image: url("../img/snail.jpg"), -webkit-linear-gradient(top, #6cab26, #6ceb86); 
+    background-image: url("../img/snail.jpg"),    -moz-linear-gradient(top, #6cab26, #6ceb86); 
+    background-image: url("../img/snail.jpg"),     -ms-linear-gradient(top, #6cab26, #6ceb86); 
+    background-image: url("../img/snail.jpg"),      -o-linear-gradient(top, #6cab26, #6ceb86); 
+    background-image: url("../img/snail.jpg"),         linear-gradient(top bottom, #6cab26, #6ceb86);
+*/
     
+    background: #a4b357;
+    background-image: url("../img/snail.jpg");
+    background-image: url("../img/snail.jpg"), -moz-linear-gradient(top, #a4b357 0%, #75890c 100%);
+    background-image: url("../img/snail.jpg"), -webkit-gradient(left top, left bottom, color-stop(0%, #a4b357), color-stop(100%, #75890c));
+    background-image: url("../img/snail.jpg"), -webkit-linear-gradient(top, #a4b357 0%, #75890c 100%);
+    background-image: url("../img/snail.jpg"), -o-linear-gradient(top, #a4b357 0%, #75890c 100%);
+    background-image: url("../img/snail.jpg"), -ms-linear-gradient(top, #a4b357 0%, #75890c 100%);
+    background-image: url("../img/snail.jpg"), linear-gradient(to bottom, #a4b357 0%, #75890c 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4b357', endColorstr='#75890c', GradientType=0 );
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    color: black;
 }
 
 #logo {
@@ -116,10 +135,12 @@ body {
 
 #modernizr {
     margin-top: 20px;
+    padding-bottom: 10px;
     background: white;
     opacity: 0.85;
     display: none;
     font-size: 16px;
+    
 /*    text-align: center;*/
 }
 
@@ -150,6 +171,8 @@ body {
 
 #w3cvalidator {
     margin-top: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 #w3c li {
