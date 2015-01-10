@@ -58,14 +58,14 @@
 
 		</div><!-- /har-view -->
         
+        <div id="w3cvalidator" class="white_box">
+            <ul id="w3c">
+            </ul>
+        </div>
+
         <div id="modernizr">
             <ul id="modernizr_list">
             
-            </ul>
-        </div>
-        
-        <div id="w3cvalidator" class="white_box">
-            <ul id="w3c">
             </ul>
         </div>
         
