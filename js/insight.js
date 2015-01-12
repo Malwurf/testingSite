@@ -78,7 +78,8 @@ callbacks.fillTheTable = function(result) {
 	});
     $("#insightResultTable").show();
     $('#modernizr').show();
-    //$('.site_ip').show();
+    $('#anchors').css("visibility", "visible");
+    
 };
 
 

@@ -40,12 +40,31 @@
 <!--	
 	<p class="white_box site_ip">Adres IP testowanej strony to - <span id="insert_ip"></span></p>
 -->
+    <div id="anchors">
+        <div class="empty"></div>
+        
+        <div id="pagespeed_icon">
+            <a href="#insightResultTable" class="tooltips"><span>Optimization rules</span></a>
+        </div>
+        <div id="waterfall_icon">
+            <a href="#har-view" class="tooltips"><span>Waterfall graph</span></a>
+        </div>
+        <div id="w3c_icon">
+            <a href="#w3c" class="tooltips"><span>Validation result</span></a>
+        </div>
+        <div id="modernizr_icon">
+            <a href="#modernizr" class="tooltips"><span>Browser test</span></a>
+        </div>
+    </div>
+
+    
 	<p id="score_result"></p>
-	<div class="container margin_top_15px">
+    	<div class="container margin_top_15px">
 		<table id="insightResultTable" class="table table-striped table-bordered table-hover white_box">
+            
 			<thead>
 				<tr>
-					<td>Importance</td>
+					<a name="pagespeed" class="pagespeed_icon"><td>Importance</td></a>
 					<td>Type</td>
 					<td>Description</td>
 				</tr> 
