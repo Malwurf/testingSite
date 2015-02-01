@@ -1,0 +1,48 @@
+function download() {
+        var link = 'Najpierw zakoncz testy';
+ 
+ 
+        var dane = [];
+ 
+        var insight = [];
+        var w3c = [];
+        var modernizr = [];
+ 
+ 
+        $('#insightResultTable tbody tr').each(function (i, tr) {
+                var tds = $(tr).find('td');
+                insight.push({type: $(tds[1]).text(), importance: $(tds[0]).text(), description: $(tds[2]).text()});
+ 
+        });
+ 
+        $('#w3cvalidator li').each(function (i, li) {
+ 
+                w3c.push({
+                        type: $(li).attr('class'),
+                        linia: $(li).find('.linia').text(),
+                        kolumna: $(li).find('.kolumna').text(),
+                        wiadomosc: $(li).find('.wiadomosc').text()
+                });
+ 
+        });
+ 
+        $('#modernizr li').each(function (i, li) {
+ 
+                if ($(li).attr('class') == 'modernizr_item')
+                        modernizr.push({supported: 'yes', what: $(li).text()});
+                else
+                        modernizr.push({supported: 'no', what: $(li).text()});
+ 
+        });
+ 
+        dane.push({modernizr: modernizr});
+        dane.push({w3c: w3c});
+        dane.push({insight: insight});
+ 
+        var href = 'data:text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(dane));
+ 
+        var d = new Date();
+ 
+        $('a#download').attr('href', href).attr('download', 'SNAIL-' + d.toISOString() + '.JSON');
+ 
+}
