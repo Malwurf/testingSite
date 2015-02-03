@@ -1,6 +1,0 @@
-1. Zrób sobie gdzieœ link i daj mu id="download".
-2. W pliku har.js w 8 linijce napisz tak:
-download();
-3. Dodaj sobie plik js/save.js, zaincluduj go w html tak jak inne skrypty js.
-
-Jak wczyta siê wykres waterfall to link #download bêdzie pobiera³ plik JSON z danymi ze strony, ale w³aœnie bez tego HAR, bo nie potrafiê do niego dotrzeæ.
